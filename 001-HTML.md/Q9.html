@@ -1,0 +1,92 @@
+<!--  Q.9) Write HTML input tags snippet to show default values for all Form elements -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default Form Values</title>
+</head>
+<body>
+    <style>
+        body {
+            text-align: center;
+            font-size: 20px;
+            background-color: white;
+            color: black;
+        }
+    </style>
+    <h1>Default Form Values</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            value="Smaraki Pani"
+        /><br /><br />
+
+        <label for="contact">Contact</label>
+        <input
+            type="number"
+            name="contact"
+            id="contact"
+            value="700123654"
+        /><br /><br />
+
+        <label for="email">Email:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            value="smaraki@gmail.com"
+        /><br /><br />
+
+        <label for="password">Password:</label>
+        <input
+            type="password"
+            name="password"
+            id="password"
+            value="123456789"
+        /><br /><br />
+
+        <label for="gender">Gender:</label><br />
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="female" checked />
+        <label for="own-business">Female</label><br /><br />
+
+        <label for="birthdate">Birthdate:</label>
+        <input
+            type="date"
+            id="birthdate"
+            name="birthdate"
+            value="1998-01-27"
+        /><br /><br />
+
+        <label for="eligibility">Are You Eligible:</label>
+        <input
+            type="checkbox"
+            id="eligibility"
+            name="eligibility"
+            checked
+        /><br /><br />
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="USA">USA</option>
+            <option value="India" selected>India</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+        </select><br /><br />
+
+        <label for="performance">Performance</label>
+        <input type="range" name="performance" id="performance" value="80" /><br /><br />
+
+        <label for="about">About:</label><br />
+        <textarea id="about" name="about" rows="4">Default information..</textarea><br /><br />
+
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+    </form>
+</body>
+</html>

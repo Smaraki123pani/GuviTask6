@@ -1,0 +1,258 @@
+<!-- Design Tables -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: white;
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #one, #four, #three {
+            text-align: center;
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        #two{
+            text-align: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+       #three th {
+            background-color: dodgerblue;
+            color: black;
+        }
+
+       #three tbody tr:nth-child(odd) {
+            background-color: lightskyblue;
+        }
+
+        @media only screen and (max-width: 768px) {
+            table {
+                margin: 0;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            th, td {
+                font-size: 14px;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Table Task 1</h1>
+    <hr />
+    <div>Data Table</div>
+    <br />
+    <table id="one">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>A</th>
+                <th>B</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Column 1</td>
+                <td>A1</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <td>Column 2</td>
+                <td>A2</td>
+                <td>B2</td>
+            </tr>
+            <tr>
+                <td>Column 3</td>
+                <td>A3</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <td>Column 4</td>
+                <td>A5</td>
+                <td>B5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Table Task 2</h1>
+    <hr />
+    <div>Liverpool Legends</div>
+    <br />
+    <table id="two">
+        <thead>
+            <tr>
+                <th>Defenders</th>
+                <th>Midfielders</th>
+                <th>Strikers</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alan Hansen</td>
+                <td>Graeme Souness</td>
+                <td>Ian Rush</td>
+            </tr>
+            <tr>
+                <td>Alan Kenedy</td>
+                <td>Seven Gerrard</td>
+                <td>Michael Owen</td>
+            </tr>
+            <tr>
+                <td>Jamie Garragher</td>
+                <td>Kenny Dalglish</td>
+                <td>Robbie Fowler</td>
+            </tr>
+            <tr>
+                <td>Rob Jones</td>
+                <td>Xabi Alonso</td>
+                <td>Dirk Kyut</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Table Task 3</h1>
+    <hr />
+    <table id="three">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Investments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>231</td>
+                <td>Albert Master</td>
+                <td>albert.master@gmail.com</td>
+                <td>Bonds</td>
+            </tr>
+            <tr>
+                <td>210</td>
+                <td>Alfred Alan</td>
+                <td>aalan@gmail.com</td>
+                <td>Stocks</td>
+            </tr>
+            <tr>
+                <td>256</td>
+                <td>Alison Smart</td>
+                <td>asmart@biztalk.com</td>
+                <td>Residential Property</td>
+            </tr>
+            <tr>
+                <td>211</td>
+                <td>Ally Emery</td>
+                <td>allye@easymail.com</td>
+                <td>Stocks</td>
+            </tr>
+            <tr>
+                <td>248</td>
+                <td>Andrew Phips</td>
+                <td>andyp@mycrop.com</td>
+                <td>Stocks</td>
+            </tr>
+            <tr>
+                <td>234</td>
+                <td>Andy Mitchel</td>
+                <td>andym@hotmail.com</td>
+                <td>Stocks</td>
+            </tr>
+            <tr>
+                <td>226</td>
+                <td>Angus Robins</td>
+                <td>arobins@robins.com</td>
+                <td>Bonds</td>
+            </tr>
+            <tr>
+                <td>241</td>
+                <td>Ann Melan</td>
+                <td>ann_melan@iinet.com</td>
+                <td>Residential Property</td>
+            </tr>
+            <tr>
+                <td>225</td>
+                <td>Ben Bessel</td>
+                <td>benb@hotmail.com</td>
+                <td>Stocks</td>
+            </tr>
+            <tr>
+                <td>235</td>
+                <td>Bensen Romanolf</td>
+                <td>benr@albert.net</td>
+                <td>Bonds</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Table task 4</h1>
+    <hr />
+    <div>Health Chart</div>
+    <br />
+    <table id="four">
+      <thead>
+        <tr>
+          <th rowspan="2">State of Health</th>
+          <th colspan="2">Fasting Value</th>
+          <th>After eating</th>
+        </tr>
+        <tr>
+          <th>Minimum</th>
+          <th>Maximum</th>
+          <th>2 hours after eating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Healthy</td>
+          <td>70</td>
+          <td>100</td>
+          <td>Less than 140</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Pre-Diabetes</td>
+          <td>101</td>
+          <td>126</td>
+          <td>140 to 200</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Diabetes</td>
+          <td>More than 126</td>
+          <td>N/A</td>
+          <td>More than 200</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+
+
+   

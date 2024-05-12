@@ -1,0 +1,44 @@
+<!-- Q.4) Write a Javascript code for character counts in the textarea -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character Counter</title>
+  </head>
+  <body>
+    <style>
+      h2,
+      div {
+        text-align: center;
+      }
+      textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-family: "Times New Roman", Times, serif;
+        opacity: 0.5;
+        font-size: larger;
+        resize: none;
+      }
+    </style>
+    <h2>Character Counter</h2>
+    <div>
+      <textarea id="text" rows="4" cols="50" oninput="countCharacters()">
+Insert Your Character:-</textarea
+      ><br />
+      <span id="count">Character count: 0</span>
+    </div>
+    <script>
+      function countCharacters() {
+        var textarea = document.getElementById("text");
+        var countSpan = document.getElementById("count");
+        var count = textarea.value.length;
+
+        countSpan.textContent = "Character count: " + count;
+        console.log(count);
+      }
+    </script>
+  </body>
+</html>

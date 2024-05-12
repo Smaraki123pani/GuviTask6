@@ -1,0 +1,31 @@
+<!-- Q.3) Display the mouse X and Y coordinates in a <span> tag when you click on a <h1> tag which contains a paragraph -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Coordinates</title>
+  </head>
+  <body>
+    <h1 id="heading">Mouse coordinates</h1>
+    <p id="paragraph">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam justo
+      nec leo vestibulum.
+    </p>
+    <span id="coordinates"></span>
+
+    <script>
+      document
+        .getElementById("heading")
+        .addEventListener("click", function (event) {
+          var coordinatesSpan = document.getElementById("coordinates");
+          var x = event.clientX;
+          var y = event.clientY;
+
+          coordinatesSpan.textContent =
+            "Mouse coordinates - X: " + x + ", Y: " + y;
+        });
+    </script>
+  </body>
+</html>

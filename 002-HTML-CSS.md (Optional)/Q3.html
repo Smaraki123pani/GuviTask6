@@ -1,0 +1,29 @@
+<!-- Q.3) Write a media rule to change only the font size of web page when it's resized. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+  </head>
+  <body>
+    <style>
+      /* Define default font size */
+      body {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      /* Media rule to change font size when resized */
+      @media screen and (max-width: 700px) {
+        body {
+          font-size: 50px; /* Adjust font size for smaller screens */
+        }
+      }
+    </style>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa.
+    </div>
+  </body>
+</html>

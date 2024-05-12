@@ -1,0 +1,30 @@
+<!-- Q.2) Use prompt to read a value from user and display it in the span element. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input and Display</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Click the button to enter a value:</h2>
+      <button onclick="displayValue()">Enter Value</button>
+      <span id="display"></span>
+    </div>
+
+    <script>
+      function displayValue() {
+        var a = prompt("Enter a value:");
+        var b = document.getElementById("display");
+
+        if (a !== null && a !== "") {
+          b.textContent = a;
+        } else {
+          b.textContent = "No value entered";
+        }
+      }
+    </script>
+  </body>
+</html>

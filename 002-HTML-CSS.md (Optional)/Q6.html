@@ -1,0 +1,33 @@
+<!-- Q.6) Write a CSS class to change size of font, color, font family when mouse moves over of span tag in your webpage. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MouseOver</title>
+  </head>
+  <body>
+    <style>
+      * {
+        padding: 20px;
+      }
+      body {
+        text-align: center;
+      }
+      .item {
+        font-size: 20px;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .item:hover {
+        font-size: 50px;
+        color: darkblue;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        cursor: pointer;
+      }
+    </style>
+    <h1>Move over me</h1>
+    <span class="item">Lorem ipsum dolor sit amet.</span>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!-- Q.8) Define a CSS class to show tooltip when mouse moved over the elements. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToolTip</title>
+  </head>
+  <body>
+    <style>
+      * {
+        padding: 20px;
+      }
+      .tooltip {
+        text-align: center;
+
+        position: relative;
+      }
+
+      .tooltip:hover::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+    </style>
+    <div class="tooltip" data-tooltip="Tooltip content here">Move over me</div>
+  </body>
+</html>

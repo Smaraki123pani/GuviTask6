@@ -1,0 +1,46 @@
+<!-- Q.8) When user press any key in your html page show a alert that Invalid Key Pressed, but when user press spacebar show an alert Thank You..!! and close the current window -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        text-align: center;
+        padding-top: 250px;
+      }
+
+      button {
+        color: black;
+        font-size: 20px;
+        padding: 10px;
+        border: 1px solid black;
+        display: inline-block;
+        transition: color 0.3s, background-color 0.3s;
+      }
+
+      button:hover {
+        color: white;
+        background-color: darkblue;
+      }
+    </style>
+    <h1>Press the Spacebar</h1>
+    <button onclick="showAlert()">Click Here</button>
+    <script>
+      function showAlert() {
+        alert("Invalid Key Pressed");
+      }
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === " ") {
+          alert("Thank You..!!");
+          window.close();
+        }
+      });
+    </script>
+  </body>
+</html>

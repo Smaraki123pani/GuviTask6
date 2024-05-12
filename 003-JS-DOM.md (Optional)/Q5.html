@@ -1,0 +1,52 @@
+<!-- Q.5) Convert a given number from decimal to binary or hexadecimal -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Converter</title>
+  </head>
+  <body>
+    <style>
+      body {
+        text-align: center;
+        font-size: larger;
+        font-family: "Times New Roman", Times, serif;
+      }
+      button {
+        width: 200px;
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: lightskyblue;
+        cursor: pointer;
+      }
+    </style>
+    <h2>Decimal to Binary/Hexadecimal Number Converter</h2>
+    <label for="decimalInput">Enter a Decimal Number:</label>
+    <input type="number" id="decimalInput" /><br /><br />
+    <button onclick="convertToBinary()">Convert to Binary</button><br /><br />
+    <button onclick="convertToHex()">Convert to Hexadecimal</button>
+    <p id="binaryResult"></p>
+    <p id="hexResult"></p>
+
+    <script>
+      function convertToBinary() {
+        var decimalInput = document.getElementById("decimalInput").value;
+        var binaryResult = document.getElementById("binaryResult");
+        binaryResult.innerText =
+          "Binary: " + parseInt(decimalInput).toString(2);
+      }
+
+      function convertToHex() {
+        var decimalInput = document.getElementById("decimalInput").value;
+        var hexResult = document.getElementById("hexResult");
+        hexResult.innerText =
+          "Hexadecimal: " + parseInt(decimalInput).toString(16).toUpperCase();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!-- Color a span/div element content when a user moves the mouse over the element. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Hover Effect</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        text-align: center;
+      }
+
+      .item {
+        color: black;
+        font-size: 20px;
+        padding: 10px;
+        border: 1px solid black;
+        display: inline-block;
+        transition: color 0.3s, background-color 0.3s;
+      }
+
+      .item:hover {
+        color: white;
+        background-color: green;
+      }
+    </style>
+    <div class="container">
+      <h2>Move your mouse over the text to see the effect:</h2>
+      <span class="item">Hover over me!</span>
+    </div>
+  </body>
+</html>

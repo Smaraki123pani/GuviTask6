@@ -1,0 +1,26 @@
+<!-- Q.14) Give the <div> element an image border using the image "border.png". Slice the image at 30px and stretch it. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ImageBorder</title>
+  </head>
+  <body>
+    <style>
+      div {
+        margin-top: 200px;
+        padding: 30px;
+        text-align: center;
+        font-size: 30px;
+
+        border-width: 30px;
+        border-image-source: url("border.png");
+        border-image-slice: 30 fill;
+        border-image-repeat: stretch;
+      }
+    </style>
+    <div>An Image Border</div>
+  </body>
+</html>

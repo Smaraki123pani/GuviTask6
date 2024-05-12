@@ -1,0 +1,39 @@
+<!-- Q.5) Create an element that helps you to open the https://google.com in separate new tab. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link</title>
+    <style>
+      body {
+        font-size: large;
+        background-color: white;
+            color: black;
+      }
+      a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      a:hover {
+        background-color: #0056b3;
+        cursor: pointer;
+      }
+      @media only screen and (max-width: 768px) {
+        body {
+          font-size: medium;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="http://google.com" target="_blank">Go to Google</a>
+  </body>
+</html>
+

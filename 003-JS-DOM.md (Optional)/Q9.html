@@ -1,0 +1,44 @@
+<!-- Q.9) When a cursor is moved over an content, allow the user to edit the content in HTML page. -->
+<!-- NOTE: Input element should not be used. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editable Content</title>
+    <style>
+      body {
+        text-align: center;
+        padding-top: 250px;
+      }
+      .editable {
+        border: 1px solid #ccc;
+        padding: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Editable Content</h2>
+    <div
+      class="editable"
+      onmouseover="makeEditable(this)"
+      onmouseout="makeNonEditable(this)"
+    >
+      Click to Edit
+    </div>
+
+    <script>
+      function makeEditable(element) {
+        element.contentEditable = true;
+        element.style.backgroundColor = "pink";
+      }
+
+      function makeNonEditable(element) {
+        element.contentEditable = false;
+        element.style.backgroundColor = "transparent";
+      }
+    </script>
+  </body>
+</html>

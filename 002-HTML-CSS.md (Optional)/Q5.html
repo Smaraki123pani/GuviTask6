@@ -1,0 +1,40 @@
+<!-- Q.5) Write a CSS class that meets the Box Model requirement for all the div tags in your page. -->
+<!-- Use certain properties padding, margin, border. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxModel</title>
+</head>
+<body>
+    <style>
+
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px;
+
+        }
+        h1{
+            text-align: center;
+        }
+        .box{
+            text-align: center;
+            color: black;
+            background-color: #c07efd;
+            border: 2px solid black;
+            padding: 40px;
+            margin: 50px;
+    
+        }
+    
+    </style>
+    <body>
+        <h1>Box Model</h1>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cum fugiat ipsum doloribus, porro asperiores sed perspiciatis voluptates culpa itaque.</p>
+        </div>
+    </body>
+</html>

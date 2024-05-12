@@ -1,0 +1,31 @@
+<!-- Q.13) Write CSS rules to set the direction of the flexible items inside the <div></div> element in reverse order -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexReverse</title>
+  </head>
+  <body>
+    <style>
+      body {
+        border: 1px solid black;
+      }
+
+      div {
+        border: 2px solid blueviolet;
+        margin: 30px;
+        width: 100px;
+
+        display: flex;
+        flex-direction: row-reverse;
+      }
+    </style>
+
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </body>
+</html>
